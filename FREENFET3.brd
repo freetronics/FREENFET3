@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20,10 +20,10 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -541,74 +541,100 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="freetronics-master-v1" package="0603" value="1uF" x="5.715" y="10.16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="7.239" y="11.049" size="0.8128" layer="26" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="6.176" y="11.3198" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="5.149" y="9.761" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="5.176" y="10.6198" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="Q1" library="freetronics-master-v1.1" package="DPACK" value="NTD5867NLT4G" x="8.89" y="7.366"/>
+<element name="Q1" library="freetronics-master-v1.1" package="DPACK" value="NTD5867NLT4G" x="8.89" y="7.366" smashed="yes">
+<attribute name="NAME" x="7.826" y="7.62" size="1.27" layer="25"/>
+<attribute name="VALUE" x="2.226" y="9.83" size="1.27" layer="27"/>
+</element>
 <element name="R5" library="freetronics-master-v1" package="0603" value="10K" x="7.62" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="8.128" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="8.856" y="11.6548" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="8.029" y="8.328" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="8.356" y="11.4548" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="D1" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="8.89" y="15.748"/>
+<element name="D1" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="8.89" y="15.748" smashed="yes">
+<attribute name="NAME" x="5.9438" y="15.9308" size="1.27" layer="25"/>
+<attribute name="VALUE" x="7.62" y="12.573" size="1.27" layer="27"/>
+</element>
 <element name="IC1" library="freetronics-jon" package="SO08-SKINNYPADS" value="WS2811-SOP8" x="8.89" y="5.08" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="11.922" y="2.143" size="0.6096" layer="28" ratio="10" rot="MR0"/>
-<attribute name="NAME" x="10.795" y="8.001" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="12.422" y="2.043" size="0.6096" layer="28" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="9.495" y="3.901" size="0.6096" layer="26" ratio="10" rot="MR0"/>
 </element>
-<element name="J1" library="freetronics-jon" package="1X03" value="IN" x="1.27" y="11.43" rot="R270"/>
-<element name="J2" library="freetronics-jon" package="1X03" value="OUT" x="34.29" y="11.43" rot="R270"/>
-<element name="Q4" library="freetronics-jon" package="SOT32-3" value="MOSFET-NSOT-323" x="10.16" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="10.9855" y="11.56" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="11.96" y="9.9695" size="0.3048" layer="28" rot="MR0"/>
+<element name="J1" library="freetronics-jon" package="1X03" value="IN" x="1.27" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="0.2238" y="12.0988" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="-2" y="7.095" size="1.27" layer="27"/>
+</element>
+<element name="J2" library="freetronics-jon" package="1X03" value="OUT" x="34.29" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.1238" y="10.4188" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="36" y="6.415" size="1.27" layer="27"/>
+</element>
+<element name="Q4" library="freetronics-jon" package="SOT32-3" value="RJU003N03" x="10.16" y="10.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4855" y="11.56" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="11.2695" y="7.84" size="0.6096" layer="28" rot="MR90"/>
 </element>
 <element name="R1" library="freetronics-master-v1" package="0603" value="1K" x="13.97" y="7.62" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.462" y="8.509" size="0.4064" layer="26" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="14.364" y="7.9352" size="0.4064" layer="28" font="vector" rot="MR180"/>
+<attribute name="NAME" x="15.309" y="7.538" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="15.436" y="6.7648" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
 <element name="R2" library="freetronics-master-v1" package="0603" value="10K" x="12.7" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="13.208" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="13.856" y="11.7348" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="14.129" y="10.608" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="14.556" y="11.3348" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
 <element name="Q2" library="freetronics-master-v1.1" package="DPACK" value="NTD5867NLT4G" x="17.78" y="7.366" smashed="yes">
-<attribute name="NAME" x="13.97" y="4.826" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="22.86" y="4.826" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="16.726" y="7.53" size="1.27" layer="25"/>
+<attribute name="VALUE" x="10.926" y="5.94" size="1.27" layer="27"/>
 </element>
 <element name="R3" library="freetronics-master-v1" package="0603" value="10K" x="16.51" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="17.018" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="16.856" y="11.5448" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="15.929" y="9.218" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="15.956" y="9.9448" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="D2" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="17.78" y="15.748"/>
-<element name="Q5" library="freetronics-jon" package="SOT32-3" value="MOSFET-NSOT-323" x="19.05" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.8755" y="11.56" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="20.85" y="9.9695" size="0.3048" layer="28" rot="MR0"/>
+<element name="D2" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="17.78" y="15.748" smashed="yes">
+<attribute name="NAME" x="15.2338" y="15.9308" size="1.27" layer="25"/>
+<attribute name="VALUE" x="16.51" y="12.573" size="1.27" layer="27"/>
+</element>
+<element name="Q5" library="freetronics-jon" package="SOT32-3" value="RJU003N03" x="19.05" y="10.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="19.4755" y="11.56" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="20.2695" y="7.75" size="0.6096" layer="28" rot="MR90"/>
 </element>
 <element name="R4" library="freetronics-master-v1" package="0603" value="1K" x="20.955" y="6.35" smashed="yes" rot="MR270">
-<attribute name="NAME" x="20.447" y="7.239" size="0.4064" layer="26" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="21.634" y="6.9202" size="0.4064" layer="28" font="vector" rot="MR180"/>
+<attribute name="NAME" x="22.339" y="6.453" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="22.466" y="5.6798" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
 <element name="R6" library="freetronics-master-v1" package="0603" value="10K" x="21.59" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="22.098" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="21.856" y="11.6248" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="23.029" y="10.598" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="23.456" y="11.3248" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="Q3" library="freetronics-master-v1.1" package="DPACK" value="NTD5867NLT4G" x="26.67" y="7.366"/>
+<element name="Q3" library="freetronics-master-v1.1" package="DPACK" value="NTD5867NLT4G" x="26.67" y="7.366" smashed="yes">
+<attribute name="NAME" x="25.626" y="7.54" size="1.27" layer="25"/>
+<attribute name="VALUE" x="19.726" y="9.75" size="1.27" layer="27"/>
+</element>
 <element name="R7" library="freetronics-master-v1" package="0603" value="10K" x="25.4" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="25.908" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="25.856" y="11.4348" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="24.929" y="8.908" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="24.856" y="9.7348" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="D3" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="26.67" y="15.748"/>
-<element name="SOURCE" library="freetronics-master-v1.1" package="1X01LARGE" value="SOURCE" x="33.02" y="15.748"/>
-<element name="Q6" library="freetronics-jon" package="SOT32-3" value="MOSFET-NSOT-323" x="27.94" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.7655" y="11.56" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="29.74" y="9.9695" size="0.3048" layer="28" rot="MR0"/>
+<element name="D3" library="freetronics-master-v1.1" package="1X01LARGE" value="DRAIN" x="26.67" y="15.748" smashed="yes">
+<attribute name="NAME" x="24.2238" y="15.9308" size="1.27" layer="25"/>
+<attribute name="VALUE" x="25.4" y="12.573" size="1.27" layer="27"/>
+</element>
+<element name="SOURCE" library="freetronics-master-v1.1" package="1X01LARGE" value="SOURCE" x="33.02" y="15.748" smashed="yes">
+<attribute name="NAME" x="32.2738" y="16.9308" size="1.27" layer="25"/>
+</element>
+<element name="Q6" library="freetronics-jon" package="SOT32-3" value="RJU003N03" x="27.94" y="10.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="28.2655" y="11.56" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="29.0695" y="7.86" size="0.6096" layer="28" rot="MR90"/>
 </element>
 <element name="R8" library="freetronics-master-v1" package="0603" value="1K" x="29.845" y="6.35" smashed="yes" rot="MR270">
-<attribute name="NAME" x="29.337" y="7.239" size="0.4064" layer="26" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="30.634" y="6.8102" size="0.4064" layer="28" font="vector" rot="MR180"/>
+<attribute name="NAME" x="31.239" y="5.663" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="31.266" y="6.5898" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
 <element name="R9" library="freetronics-master-v1" package="0603" value="10K" x="30.48" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="30.988" y="9.271" size="0.4064" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="30.856" y="11.5148" size="0.4064" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="31.929" y="9.388" size="0.6096" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="32.456" y="10.2148" size="0.6096" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="SJ1" library="freetronics-jon" package="SJ" value="LOW-SPEED" x="4.064" y="6.604" rot="MR90"/>
+<element name="SJ1" library="freetronics-jon" package="SJ" value="LOW-SPEED" x="4.064" y="6.604" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.147" y="8.107" size="0.6096" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="4.064" y="7.0041" size="0.02" layer="28" rot="MR90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">

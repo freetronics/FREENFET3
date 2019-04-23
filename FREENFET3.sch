@@ -1591,20 +1591,20 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J1" library="freetronics-jon" deviceset="M03" device="PTH" value="IN"/>
 <part name="J2" library="freetronics-jon" deviceset="M03" device="PTH" value="OUT"/>
 <part name="GND2" library="freetronics" deviceset="GND" device=""/>
-<part name="Q4" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323"/>
+<part name="Q4" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323" value="RJU003N03"/>
 <part name="R1" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="R2" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="Q2" library="freetronics-master-v1.1" deviceset="MOSFET-NCHANNEL" device="DPAK" value="NTD5867NLT4G"/>
 <part name="R3" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="D2" library="freetronics-master-v1.1" deviceset="M01" device="PTH_LARGE" value="DRAIN"/>
-<part name="Q5" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323"/>
+<part name="Q5" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323" value="RJU003N03"/>
 <part name="R4" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="R6" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="Q3" library="freetronics-master-v1.1" deviceset="MOSFET-NCHANNEL" device="DPAK" value="NTD5867NLT4G"/>
 <part name="R7" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="D3" library="freetronics-master-v1.1" deviceset="M01" device="PTH_LARGE" value="DRAIN"/>
 <part name="SOURCE" library="freetronics-master-v1.1" deviceset="M01" device="PTH_LARGE" value="SOURCE"/>
-<part name="Q6" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323"/>
+<part name="Q6" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323" value="RJU003N03"/>
 <part name="R8" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="R9" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="SJ1" library="freetronics-jon" deviceset="SJ" device="N" value="LOW-SPEED"/>
